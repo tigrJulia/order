@@ -1,0 +1,417 @@
+.building__title {
+  margin: 45px 0 23px;
+}
+@media screen and (max-width: 375px) {
+  .building__title {
+    margin: 0 0 24px;
+    font-size: 21px;
+    line-height: 23px;
+  }
+}
+.building__title span {
+  display: none;
+}
+@media screen and (max-width: 375px) {
+  .building__title span {
+    display: inline;
+  }
+}
+
+.type__label {
+  margin-bottom: 16px;
+}
+
+.choice {
+  margin: 0 37px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+@media screen and (max-width: 865px) {
+  .choice {
+    margin: 0;
+  }
+}
+.choice .text {
+  cursor: pointer;
+  width: 203px;
+  padding: 13px 19px 15px;
+  background-color: #EDEEF0;
+  border: 1px solid #EDEEF0;
+  border-radius: 15px;
+  transition: border 0.3s ease;
+}
+.choice .text:hover {
+  border: 1px solid #E70658;
+  transition: border 0.3s ease;
+}
+.choice::after {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(270deg, #ffffff 0%, rgba(237, 237, 237, 0) 10.13%, rgba(217, 217, 217, 0) 90.3%, #ffffff 100%);
+}
+@media screen and (max-width: 865px) {
+  .choice::after {
+    background: linear-gradient(270deg, #ffffff 0%, rgba(237, 237, 237, 0) 10.13%, rgba(217, 217, 217, 0) 90.3%, rgba(255, 255, 255, 0) 100%);
+  }
+}
+.choice .radio {
+  display: flex;
+  text-align: center;
+  font-size: 14px;
+  line-height: 16px;
+  position: relative;
+  margin: 0 10px;
+}
+.choice .radio__name {
+  margin: 0;
+}
+.choice .radio__apts {
+  opacity: 0.5;
+  margin: 0;
+}
+.choice .radio .text {
+  width: 203px;
+}
+@media screen and (max-width: 375px) {
+  .choice .radio .text {
+    width: 220px;
+  }
+}
+.choice .radio input[type=radio] {
+  display: none;
+}
+.choice .radio input[type=radio]:checked + .radio__btn span img {
+  opacity: 1;
+}
+.choice .radio input[type=radio]:checked ~ .text {
+  background-color: #E70658;
+  transition: all 0.3s ease;
+}
+.choice .radio input[type=radio]:checked ~ .text .radio__name {
+  color: #FFF;
+  transition: all 0.3s ease;
+}
+.choice .radio input[type=radio]:checked ~ .text .radio__apts {
+  color: #fff006;
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+.choice .radio__btn {
+  display: inline-block;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.choice .radio__btn img {
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.navMob {
+  display: none;
+  margin: 24px 0;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+@media screen and (max-width: 643px) {
+  .navMob {
+    display: flex;
+  }
+}
+.navMob__item {
+  padding: 10px 0;
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 18px;
+  line-height: 24px;
+}
+.navMob__item:hover {
+  color: #000;
+  font-weight: 700;
+}
+@media screen and (max-width: 361px) {
+  .navMob__item {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+.navMob_open {
+  color: #000;
+  font-size: 21px;
+  font-weight: 700;
+  border-bottom: 1px solid var(--fff-006, #FFF006);
+}
+@media screen and (max-width: 361px) {
+  .navMob_open {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 643px) {
+  .interiors {
+    display: none;
+    margin: 0 !important;
+  }
+}
+.interiors__title {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: -0.5px;
+  margin-bottom: 32px;
+}
+.interiors__select {
+  line-height: 16px;
+  font-size: 14px;
+  margin: 24px 0 0;
+}
+@media screen and (max-width: 865px) {
+  .interiors__select {
+    text-align: center;
+    margin: 16px 0 0;
+  }
+}
+.interiors__choice {
+  position: relative;
+  margin: 0 46px;
+  display: flex;
+}
+@media screen and (max-width: 865px) {
+  .interiors__choice {
+    display: block;
+    margin: 0;
+  }
+}
+.interiors__choice .card {
+  position: relative;
+  border-radius: 24px;
+  border: 1px solid transparent;
+  max-width: 172px;
+  height: 172px;
+  margin: 0 12px;
+  cursor: pointer;
+}
+@media screen and (max-width: 865px) {
+  .interiors__choice .card {
+    border: 1px solid #E70658 !important;
+    width: 139px !important;
+    height: 139px;
+    margin: 8px;
+  }
+}
+@media screen and (max-width: 355px) {
+  .interiors__choice .card {
+    width: 119px !important;
+    height: 119px;
+  }
+}
+.interiors__choice .card input[type=checkbox] {
+  display: none;
+}
+.interiors__choice .card input[type=checkbox]:checked + .interiors__choice__btn span img {
+  opacity: 1;
+}
+.interiors__choice__btn {
+  display: inline-block;
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.interiors__choice__btn img {
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.interiors .next {
+  display: none;
+  margin-top: 24px;
+  width: 100%;
+  background-color: #E70658;
+  padding: 21px 0;
+  text-align: center;
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: -0.5px;
+  border-radius: 15px;
+  transition: all 0.3s ease-in-out;
+}
+.interiors .next:hover {
+  background-color: #C70C50;
+  transition: all 0.3s ease-in-out;
+}
+@media screen and (max-width: 643px) {
+  .interiors .next {
+    display: block;
+  }
+}
+
+.search {
+  opacity: 0;
+  position: absolute;
+  top: calc(50% - 12px);
+  left: calc(50% - 12px);
+  background: none;
+  z-index: 10;
+}
+
+.card1 {
+  background: url("../img/form/building/sliders/1.png") lightgray 50%/cover no-repeat;
+}
+.card1:hover {
+  background: linear-gradient(0deg, rgba(231, 6, 88, 0.5) 0%, rgba(231, 6, 88, 0.5) 100%), url("../img/form/building/sliders/1.png") lightgray 50%/cover no-repeat;
+}
+.card1:hover .interiors__choice__btn {
+  display: none;
+}
+.card1:hover .search {
+  opacity: 1;
+}
+
+.card2 {
+  background: url("../img/form/building/sliders/2.png") lightgray 50%/cover no-repeat;
+}
+.card2:hover {
+  background: linear-gradient(0deg, rgba(231, 6, 88, 0.5) 0%, rgba(231, 6, 88, 0.5) 100%), url("../img/form/building/sliders/2.png") lightgray 50%/cover no-repeat;
+}
+.card2:hover .interiors__choice__btn {
+  display: none;
+}
+.card2:hover .search {
+  opacity: 1;
+}
+
+.card3 {
+  background: url("../img/form/building/sliders/3.png") lightgray 50%/cover no-repeat;
+}
+.card3:hover {
+  background: linear-gradient(0deg, rgba(231, 6, 88, 0.5) 0%, rgba(231, 6, 88, 0.5) 100%), url("../img/form/building/sliders/3.png") lightgray 50%/cover no-repeat;
+}
+.card3:hover .interiors__choice__btn {
+  display: none;
+}
+.card3:hover .search {
+  opacity: 1;
+}
+
+.gallery .slick-slide {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.gallery .slick-arrow.slick-prev {
+  left: -46px;
+}
+.gallery .slick-arrow.slick-next {
+  right: -46px;
+}
+.gallery .slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 0;
+  margin: 24px 0 0;
+}
+.gallery .slick-dots button {
+  font-size: 0;
+  width: 8px;
+  height: 8px;
+  background-color: #D9D9D9;
+  border-radius: 50%;
+}
+.gallery .slick-dots li {
+  list-style: none;
+}
+.gallery .slick-dots li.slick-active button {
+  background-color: #000;
+  width: 16px;
+  height: 16px;
+}
+
+.slick {
+  min-width: 0;
+}
+.slick-list {
+  overflow: hidden;
+}
+.slick-track {
+  display: flex;
+  width: 100%;
+}
+.slick-arrow {
+  position: absolute;
+  font-size: 0;
+  cursor: pointer;
+  top: calc(50% - 16px);
+  width: 32px;
+  height: 32px;
+}
+.slick-arrow.slick-prev {
+  left: -36px;
+  background: url("../img/form/building/sliders/icon/left.svg") no-repeat;
+}
+.slick-arrow.slick-next {
+  right: -36px;
+  background: url("../img/form/building/sliders/icon/right.svg");
+}
+
+.modal {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(10.8999996185px);
+          backdrop-filter: blur(10.8999996185px);
+  opacity: 0;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+.modal__close {
+  width: 32px;
+  height: 32px;
+  background: none;
+  position: absolute;
+  right: -32px;
+  top: -32px;
+}
+.modal__img {
+  max-width: 954px;
+  width: 66.25%;
+  max-height: 703px;
+  position: relative;
+  margin: 0 auto;
+}
+.modal__img img {
+  border-radius: 24px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.modal_active {
+  opacity: 1;
+  pointer-events: all;
+}

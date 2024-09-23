@@ -1,0 +1,59 @@
+.panel, .confirmation {
+    border-radius: 20px;
+    background: #E70658;
+    padding: 32px 20px;
+    flex-shrink: 0;
+    width: 28%;
+    @media screen and (max-width: 1146px) {width: 315px;}
+    @media screen and (max-width: 682px) {
+        padding: 24px;
+        width: 100%;
+        border-radius: 18px;
+        display: none;
+    }
+    @media screen and (max-width: 354px) {padding: 16px;}
+    @media screen and (max-width: 339px) {padding: 16px 10px;}
+}
+.minus, .plus, .delete {
+    border: none;
+    border-radius: 50%;
+    background-color: none;
+}
+.building, .sum, .formInfo{
+    padding: 32px 23px 32px 25px;
+    width: 72%;
+    @media screen and (max-width: 1146px) {width: calc(100% - 315px);}
+    @media screen and (max-width: 682px) {
+        padding: 24px;
+        width: 100%;
+    }
+}
+.mobOpen {display: block;}
+
+.action {
+    display: none;
+    position: relative;
+    border-radius: 20px;
+    background: #FFF;
+    width: 100%;
+    justify-content: space-between;
+    margin: 23px 0 32px;
+    @media screen and (max-width: 865px) {margin: 32px 0 48px;}
+    @media screen and (max-width: 375px) {
+        border-radius: 18px;
+        flex-direction: column;
+    }
+}
+.action.now { display: flex;}
+#action2 {
+    margin: 24px 0 80px;
+    @media screen and (max-width: 375px) {margin: 24px 0 32px;}
+}
+#action2, #action3 {
+    @media screen and (max-width: 690px) {
+        flex-direction: column;
+        gap: 24px;
+        background: none;
+    }
+}
+.close {display: none;}

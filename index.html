@@ -1,0 +1,1279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="robots" content="none">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/header.css">
+
+    <link rel="stylesheet" href="./css/building.css">
+    <link rel="stylesheet" href="./css/aside1.css">
+
+    <link rel="stylesheet" href="./css/orderForm.css">
+    
+    <link rel="stylesheet" href="./css/sum.css">
+    <link rel="stylesheet" href="./css/confirmation.css">
+
+    <link rel="stylesheet" href="./css/formInfo.css">
+
+    <link rel="stylesheet" href="./css/thanks.css">
+    <title>Project 6</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="colomn">
+                    <div class="title">
+                        <h1 class="attention h1 h1-attention">
+                            We're online
+                        </h1>
+                        <h1 class="quick h1">
+                            Quick 3D rendering service - Start ordering now!
+                            <img src="./img/header/guaranteed-label.svg" alt="logo" class="logo-mb">
+                        </h1>
+                        
+                    </div>
+                    <div class="steps">
+                        <button type="button" class="step step1 active" id="TOstep1">
+                            <h2 class="step__num">1</h2>
+                            <p class="step__descr">
+                                Add items to order
+                            </p>
+                        </button>
+
+                        <button type="button" class="step step2" id="TOstep2">
+                            <h2 class="step__num">2</h2>
+                            <p class="step__descr">
+                                Confirm Order
+                            </p>
+                        </button>
+
+                        <button type="button" class="step step3" id="TOstep3">
+                            <h2 class="step__num">3</h2>
+                            <p class="step__descr">
+                                Make artist reservation
+                            </p>
+                        </button>
+                    </div>
+                </div>
+
+                <img src="./img/header/guaranteed-label.svg" alt="logo" class="logo">
+            </div>
+        </div>
+    </header>
+    <div class="wrapper">
+        <div class="content">
+            <form action="" class="orderForm">
+                <div class="container">
+                    <div class="action now" id="action1">
+                        <div class="building">
+                            <div class="type">
+                                <legend class="type__label h3">
+                                    What type of building it is?
+                                </legend>
+                                <div class="choice">
+
+                                    <label class="radio"><input type="radio" name="radio" idvalue="Single-family">
+                                        <label class="radio__btn">
+                                            <span>
+                                                <img src="./img/form/icon/input/radio__btn_choosed.svg" alt="Checked Icon">
+                                            </span>
+                                        </label>
+                                        <div class="text">
+                                            <p class="radio__name">
+                                                Single-family house
+                                            </p>
+                                            <p class="radio__apts">
+                                                1 apt
+                                            </p>
+                                        </div>
+                                    </label>
+
+                                    <label class="radio"><input type="radio" name="radio" value="Detached">
+                                        <label class="radio__btn">
+                                            <span>
+                                                <img src="./img/form/icon/input/radio__btn_choosed.svg" alt="Checked Icon">
+                                            </span>
+                                        </label>
+                                        <div class="text">
+                                            <p class="radio__name">
+                                                Detached house
+                                            </p>
+                                            <p class="radio__apts">
+                                                2-5 apts
+                                            </p>
+                                        </div>
+                                    </label>
+
+                                    <label class="radio"><input type="radio" name="radio" value="Row / Terraced" checked>
+                                        <label class="radio__btn">
+                                            <span>
+                                                <img src="./img/form/icon/input/radio__btn_choosed.svg" alt="Checked Icon">
+                                            </span>
+                                        </label>
+                                        <div class="text">
+                                            <p class="radio__name">
+                                                Row / Terraced house
+                                            </p>
+                                            <p class="radio__apts">
+                                                5-15 apts
+                                            </p>
+                                        </div>
+                                    </label>
+
+                                    <label class="radio"><input type="radio" name="radio" value="Apartment">
+                                        <label class="radio__btn">
+                                            <span>
+                                                <img src="./img/form/icon/input/radio__btn_choosed.svg" alt="Checked Icon">
+                                            </span>
+                                        </label>
+                                        <div class="text">
+                                            <p class="radio__name">
+                                                Apartment buidings
+                                            </p>
+                                            <p class="radio__apts">
+                                                20-100 apts
+                                            </p>
+                                        </div>
+                                    </label>
+
+                                </div>
+                            </div>
+                            <div class="navMob">
+                                <button type="button" class="navMob__item TOinteriors navMob_open" id="TOinteriors">
+                                    Interiors
+                                </button>
+                                <button type="button" class="navMob__item TOexteriors" id="TOexteriors">
+                                    Exteriors
+                                </button>
+                                <button type="button" class="navMob__item TOcalculator" id="TOcalculator">
+                                    Calculator
+                                </button>
+                            </div>
+                            <p class="building__title h3">
+                                Choose the renders you like for us to find the perfect artist for you <span>(5 min)</span>
+                            </p>
+
+                            <div class="interiors mobOpen" style="margin-bottom: 48px;" id="interiors">
+                                <legend class="interiors__title">
+                                    Interiors
+                                </legend>
+                                <div class="interiors__choice gallery">
+                                    <label class="card card1">
+                                        <input type="checkbox" name="checkbox" value="1">
+                                        <label class="interiors__choice__btn">
+                                            <span>
+                                                <img src="./img/form/icon/input/interiors_choosed.png" alt="Checked Icon">
+                                            </span>
+                                        </label>
+                                        <button type="button" class="search" id="search1">
+                                            <img src="./img/form/icon/search.svg" alt="" >
+                                        </button>
+                                    </label>
+
+                                    <label class="card card2">
+                                        <input type="checkbox" name="checkbox" value="2">
+                                        <label class="interiors__choice__btn">
+                                            <span>
+                                                <img src="./img/form/icon/input/interiors_choosed.png" alt="Checked Icon">
+                                            </span>
+                                        </label>
+                                        <button type="button" class="search" id="search2">
+                                            <img src="./img/form/icon/search.svg" alt="" >
+                                        </button>
+                                    </label>
+
+                                    <label class="card card3">
+                                        <input type="checkbox" name="checkbox" value="3">
+                                        <label class="interiors__choice__btn">
+                                            <span>
+                                                <img src="./img/form/icon/input/interiors_choosed.png" alt="Checked Icon">
+                                            </span>
+                                        </label>
+                                        <button type="button" class="search" id="search3">
+                                            <img src="./img/form/icon/search.svg" alt="" >
+                                        </button>
+                                    </label>
+
+                                    <label class="card card2">
+                                        <input type="checkbox" name="checkbox" value="4">
+                                        <label class="interiors__choice__btn">
+                                            <span>
+                                                <img src="./img/form/icon/input/interiors_choosed.png" alt="Checked Icon">
+                                            </span>
+                                        </label>
+                                        <button type="button" class="search" id="search2">
+                                            <img src="./img/form/icon/search.svg" alt="" >
+                                        </button>
+                                    </label>
+
+                                    <label class="card card3">
+                                        <input type="checkbox" name="checkbox" value="3">
+                                        <label class="interiors__choice__btn">
+                                            <span>
+                                                <img src="./img/form/icon/input/interiors_choosed.png" alt="Checked Icon">
+                                            </span>
+                                        </label>
+                                        <button type="button" class="search" id="search3">
+                                            <img src="./img/form/icon/search.svg" alt="" >
+                                        </button>
+                                    </label>
+
+                                    <label class="card card1">
+                                        <input type="checkbox" name="checkbox" value="1">
+                                        <label class="interiors__choice__btn">
+                                            <span>
+                                                <img src="./img/form/icon/input/interiors_choosed.png" alt="Checked Icon">
+                                            </span>
+                                        </label>
+                                        <button type="button" class="search" id="search1">
+                                            <img src="./img/form/icon/search.svg" alt="" >
+                                        </button>
+                                    </label>
+
+                                    <label class="card card2">
+                                        <input type="checkbox" name="checkbox" value="2">
+                                        <label class="interiors__choice__btn">
+                                            <span>
+                                                <img src="./img/form/icon/input/interiors_choosed.png" alt="Checked Icon">
+                                            </span>
+                                        </label>
+                                        <button type="button" class="search" id="search2">
+                                            <img src="./img/form/icon/search.svg" alt="" >
+                                        </button>
+                                    </label>
+
+                                    <label class="card card3">
+                                        <input type="checkbox" name="checkbox" value="3">
+                                        <label class="interiors__choice__btn">
+                                            <span>
+                                                <img src="./img/form/icon/input/interiors_choosed.png" alt="Checked Icon">
+                                            </span>
+                                        </label>
+                                        <button type="button" class="search" id="search3">
+                                            <img src="./img/form/icon/search.svg" alt="" >
+                                        </button>
+                                    </label>
+
+                                    <label class="card card2">
+                                        <input type="checkbox" name="checkbox" value="4">
+                                        <label class="interiors__choice__btn">
+                                            <span>
+                                                <img src="./img/form/icon/input/interiors_choosed.png" alt="Checked Icon">
+                                            </span>
+                                        </label>
+                                        <button type="button" class="search" id="search2">
+                                            <img src="./img/form/icon/search.svg" alt="" >
+                                        </button>
+                                    </label>
+
+                                    <label class="card card3">
+                                        <input type="checkbox" name="checkbox" value="3">
+                                        <label class="interiors__choice__btn">
+                                            <span>
+                                                <img src="./img/form/icon/input/interiors_choosed.png" alt="Checked Icon">
+                                            </span>
+                                        </label>
+                                        <button type="button" class="search" id="search3">
+                                            <img src="./img/form/icon/search.svg" alt="" >
+                                        </button>
+                                    </label>
+
+                                    <label class="card card1">
+                                        <input type="checkbox" name="checkbox" value="1">
+                                        <label class="interiors__choice__btn">
+                                            <span>
+                                                <img src="./img/form/icon/input/interiors_choosed.png" alt="Checked Icon">
+                                            </span>
+                                        </label>
+                                        <button type="button" class="search" id="search1">
+                                            <img src="./img/form/icon/search.svg" alt="" >
+                                        </button>
+                                    </label>
+
+                                    <label class="card card2">
+                                        <input type="checkbox" name="checkbox" value="2">
+                                        <label class="interiors__choice__btn">
+                                            <span>
+                                                <img src="./img/form/icon/input/interiors_choosed.png" alt="Checked Icon">
+                                            </span>
+                                        </label>
+                                        <button type="button" class="search" id="search2">
+                                            <img src="./img/form/icon/search.svg" alt="" >
+                                        </button>
+                                    </label>
+
+                                    <label class="card card3">
+                                        <input type="checkbox" name="checkbox" value="3">
+                                        <label class="interiors__choice__btn">
+                                            <span>
+                                                <img src="./img/form/icon/input/interiors_choosed.png" alt="Checked Icon">
+                                            </span>
+                                        </label>
+                                        <button type="button" class="search" id="search3">
+                                            <img src="./img/form/icon/search.svg" alt="" >
+                                        </button>
+                                    </label>
+
+                                    <label class="card card2">
+                                        <input type="checkbox" name="checkbox" value="2">
+                                        <label class="interiors__choice__btn">
+                                            <span>
+                                                <img src="./img/form/icon/input/interiors_choosed.png" alt="Checked Icon">
+                                            </span>
+                                        </label>
+                                        <button type="button" class="search" id="search2">
+                                            <img src="./img/form/icon/search.svg" alt="" >
+                                        </button>
+                                    </label>
+
+                                    <label class="card card3">
+                                        <input type="checkbox" name="checkbox" value="3">
+                                        <label class="interiors__choice__btn">
+                                            <span>
+                                                <img src="./img/form/icon/input/interiors_choosed.png" alt="Checked Icon">
+                                            </span>
+                                        </label>
+                                        <button type="button" class="search" id="search3">
+                                            <img src="./img/form/icon/search.svg" alt="" >
+                                        </button>
+                                    </label>
+
+                                    <label class="card card2">
+                                        <input type="checkbox" name="checkbox" value="2">
+                                        <label class="interiors__choice__btn">
+                                            <span>
+                                                <img src="./img/form/icon/input/interiors_choosed.png" alt="Checked Icon">
+                                            </span>
+                                        </label>
+                                        <button type="button" class="search" id="search2">
+                                            <img src="./img/form/icon/search.svg" alt="" >
+                                        </button>
+                                    </label>
+
+                                </div>
+                                <p class="interiors__select">
+                                    0/30 select
+                                </p>
+                                <button type="button" class="next" id="TOexteriors">
+                                    Next to Exteriors
+                                </button>
+                            </div>
+
+                            <div class="interiors" id="exteriors">
+                                <legend class="interiors__title">
+                                    Exteriors
+                                </legend>
+                                <div class="interiors__choice gallery">
+                                    <label class="card card2">
+                                        <input type="checkbox" name="checkbox2" value="1">
+                                        <label class="interiors__choice__btn">
+                                            <span>
+                                                <img src="./img/form/icon/input/interiors_choosed.png" alt="Checked Icon">
+                                            </span>
+                                        </label>
+                                        <button type="button" class="search" id="search2">
+                                            <img src="./img/form/icon/search.svg" alt="" >
+                                        </button>
+                                    </label>
+
+                                    <label class="card card1">
+                                        <input type="checkbox" name="checkbox2" value="2">
+                                        <label class="interiors__choice__btn">
+                                            <span>
+                                                <img src="./img/form/icon/input/interiors_choosed.png" alt="Checked Icon">
+                                            </span>
+                                        </label>
+                                        <button type="button" class="search" id="search1">
+                                            <img src="./img/form/icon/search.svg" alt="" >
+                                        </button>
+                                    </label>
+
+                                    <label class="card card3">
+                                        <input type="checkbox" name="checkbox2" value="3">
+                                        <label class="interiors__choice__btn">
+                                            <span>
+                                                <img src="./img/form/icon/input/interiors_choosed.png" alt="Checked Icon">
+                                            </span>
+                                        </label>
+                                        <button type="button" class="search" id="search3">
+                                            <img src="./img/form/icon/search.svg" alt="" >
+                                        </button>
+                                    </label>
+
+                                    <label class="card card2">
+                                        <input type="checkbox" name="checkbox2" value="4">
+                                        <label class="interiors__choice__btn">
+                                            <span>
+                                                <img src="./img/form/icon/input/interiors_choosed.png" alt="Checked Icon">
+                                            </span>
+                                        </label>
+                                        <button type="button" class="search" id="search2">
+                                            <img src="./img/form/icon/search.svg" alt="" >
+                                        </button>
+                                    </label>
+
+                                    <label class="card card2">
+                                        <input type="checkbox" name="checkbox2" value="1">
+                                        <label class="interiors__choice__btn">
+                                            <span>
+                                                <img src="./img/form/icon/input/interiors_choosed.png" alt="Checked Icon">
+                                            </span>
+                                        </label>
+                                        <button type="button" class="search" id="search2">
+                                            <img src="./img/form/icon/search.svg" alt="" >
+                                        </button>
+                                    </label>
+
+                                    <label class="card card1">
+                                        <input type="checkbox" name="checkbox2" value="2">
+                                        <label class="interiors__choice__btn">
+                                            <span>
+                                                <img src="./img/form/icon/input/interiors_choosed.png" alt="Checked Icon">
+                                            </span>
+                                        </label>
+                                        <button type="button" class="search" id="search1">
+                                            <img src="./img/form/icon/search.svg" alt="" >
+                                        </button>
+                                    </label>
+
+                                    <label class="card card3">
+                                        <input type="checkbox" name="checkbox2" value="3">
+                                        <label class="interiors__choice__btn">
+                                            <span>
+                                                <img src="./img/form/icon/input/interiors_choosed.png" alt="Checked Icon">
+                                            </span>
+                                        </label>
+                                        <button type="button" class="search" id="search3">
+                                            <img src="./img/form/icon/search.svg" alt="" >
+                                        </button>
+                                    </label>
+
+                                    <label class="card card2">
+                                        <input type="checkbox" name="checkbox2" value="4">
+                                        <label class="interiors__choice__btn">
+                                            <span>
+                                                <img src="./img/form/icon/input/interiors_choosed.png" alt="Checked Icon">
+                                            </span>
+                                        </label>
+                                        <button type="button" class="search" id="search2">
+                                            <img src="./img/form/icon/search.svg" alt="" >
+                                        </button>
+                                    </label>
+
+                                    <label class="card card2">
+                                        <input type="checkbox" name="checkbox2" value="1">
+                                        <label class="interiors__choice__btn">
+                                            <span>
+                                                <img src="./img/form/icon/input/interiors_choosed.png" alt="Checked Icon">
+                                            </span>
+                                        </label>
+                                        <button type="button" class="search" id="search2">
+                                            <img src="./img/form/icon/search.svg" alt="" >
+                                        </button>
+                                    </label>
+
+                                    <label class="card card1">
+                                        <input type="checkbox" name="checkbox2" value="2">
+                                        <label class="interiors__choice__btn">
+                                            <span>
+                                                <img src="./img/form/icon/input/interiors_choosed.png" alt="Checked Icon">
+                                            </span>
+                                        </label>
+                                        <button type="button" class="search" id="search1">
+                                            <img src="./img/form/icon/search.svg" alt="" >
+                                        </button>
+                                    </label>
+
+                                    <label class="card card3">
+                                        <input type="checkbox" name="checkbox2" value="3">
+                                        <label class="interiors__choice__btn">
+                                            <span>
+                                                <img src="./img/form/icon/input/interiors_choosed.png" alt="Checked Icon">
+                                            </span>
+                                        </label>
+                                        <button type="button" class="search" id="search3">
+                                            <img src="./img/form/icon/search.svg" alt="" >
+                                        </button>
+                                    </label>
+
+                                    <label class="card card2">
+                                        <input type="checkbox" name="checkbox2" value="4">
+                                        <label class="interiors__choice__btn">
+                                            <span>
+                                                <img src="./img/form/icon/input/interiors_choosed.png" alt="Checked Icon">
+                                            </span>
+                                        </label>
+                                        <button type="button" class="search" id="search2">
+                                            <img src="./img/form/icon/search.svg" alt="" >
+                                        </button>
+                                    </label>
+
+                                    <label class="card card2">
+                                        <input type="checkbox" name="checkbox2" value="1">
+                                        <label class="interiors__choice__btn">
+                                            <span>
+                                                <img src="./img/form/icon/input/interiors_choosed.png" alt="Checked Icon">
+                                            </span>
+                                        </label>
+                                        <button type="button" class="search" id="search2">
+                                            <img src="./img/form/icon/search.svg" alt="" >
+                                        </button>
+                                    </label>
+
+                                    <label class="card card1">
+                                        <input type="checkbox" name="checkbox2" value="2">
+                                        <label class="interiors__choice__btn">
+                                            <span>
+                                                <img src="./img/form/icon/input/interiors_choosed.png" alt="Checked Icon">
+                                            </span>
+                                        </label>
+                                        <button type="button" class="search" id="search1">
+                                            <img src="./img/form/icon/search.svg" alt="" >
+                                        </button>
+                                    </label>
+
+                                    <label class="card card2">
+                                        <input type="checkbox" name="checkbox2" value="1">
+                                        <label class="interiors__choice__btn">
+                                            <span>
+                                                <img src="./img/form/icon/input/interiors_choosed.png" alt="Checked Icon">
+                                            </span>
+                                        </label>
+                                        <button type="button" class="search" id="search2">
+                                            <img src="./img/form/icon/search.svg" alt="" >
+                                        </button>
+                                    </label>
+
+                                    <label class="card card1">
+                                        <input type="checkbox" name="checkbox2" value="2">
+                                        <label class="interiors__choice__btn">
+                                            <span>
+                                                <img src="./img/form/icon/input/interiors_choosed.png" alt="Checked Icon">
+                                            </span>
+                                        </label>
+                                        <button type="button" class="search" id="search1">
+                                            <img src="./img/form/icon/search.svg" alt="" >
+                                        </button>
+                                    </label>
+                                </div>
+                                <p class="interiors__select">
+                                    0/30 select
+                                </p>
+                                <button type="button" class="next" id="TOcalculator">
+                                    Next to Сalculator
+                                </button>
+                            </div>
+                        </div>
+
+                        <aside class="panel" id="calculator">
+                            <div class="wrapper">
+                                <div class="renders">
+                                    <h3 class="renders__question h3">
+                                        How many renders you need?
+                                    </h3>
+                                    <div class="renders__items">
+                                        <div class="item">
+                                            <div class="item__quantity">
+                                                <div class="item__quantity__text yellow">
+                                                    <p class="item__quantity__num">
+                                                        5
+                                                    </p>
+                                                    <p class="item__quantity__name">
+                                                        Interiors
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-circle" viewBox="0 0 16 16">
+                                                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                                            <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z"/>
+                                                        </svg>
+                                                    </p>
+                                                </div>
+                                            
+                                                <div class="item__quantity__btn">
+                                                    <button type="button" class="item__quantity__btn__minus minus">
+                                                        <img src="./img/form/icon/minus.svg" alt="minus">
+                                                    </button>
+                                                    <button type="button" class="item__quantity__btn__plus plus">
+                                                        <img src="./img/form/icon/plus.svg" alt="plus">
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="item__close">
+                                                <button type="button" class="delete">
+                                                    <img src="./img/form/icon/delete.svg" alt="delete">
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                    <div class="item">
+                                        <div class="item__quantity">
+                                            <div class="item__quantity__text yellow">
+                                                <p class="item__quantity__num">
+                                                    5
+                                                </p>
+                                                <p class="item__quantity__name">
+                                                    Exteriors
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-circle" viewBox="0 0 16 16">
+                                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                                        <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z"/>
+                                                    </svg>
+                                                </p>
+                                            </div>
+                                            
+                                            <div class="item__quantity__btn">
+                                                <button type="button" class="item__quantity__btn__minus minus">
+                                                    <img src="./img/form/icon/minus.svg" alt="minus">
+                                                </button>
+                                                <button type="button" class="item__quantity__btn__plus plus">
+                                                    <img src="./img/form/icon/plus.svg" alt="plus">
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="item__close">
+                                            <button type="button" class="delete">
+                                                <img src="./img/form/icon/delete.svg" alt="delete">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="newItem">
+                                <button type="button" class="newItem__btn btn btn-toggle" data-bs-toggle="collapse" data-bs-target="#newItem" aria-expanded="true" id="btn-toggle">
+                                    Add New Item
+                                    <i class="bi bi-chevron-down" style="margin-left: 10px;"></i>
+                                </button>
+                                <div class="collapse" id="newItem">
+                                    <ul class="dropdown">
+                                        <li>
+                                            <label class="dropdown__item"><input type="radio" name="dropdown" value="Aerial" checked>
+                                                <p class="dropdown__item__text">
+                                                    Aerial / Bird-eye rendering
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-circle" viewBox="0 0 16 16">
+                                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                                        <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z"/>
+                                                    </svg>
+                                                </p>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="dropdown__item"><input type="radio" name="dropdown" value="Dronemontage">
+                                                <p class="dropdown__item__text">
+                                                    Dronemontage rendering
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-circle" viewBox="0 0 16 16">
+                                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                                        <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z"/>
+                                                    </svg>
+                                                </p>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="dropdown__item"><input type="radio" name="dropdown" value="Street">
+                                                <p class="dropdown__item__text">
+                                                    Street-level rendering
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-circle" viewBox="0 0 16 16">
+                                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                                        <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z"/>
+                                                    </svg>
+                                                </p>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="price">
+                                <p class="price__total">1,575€</p>
+                                <p class="price__vat">+ 100 vat</p>
+                            </div>
+                            
+                            <div class="days">
+                                <p class="days__text yellow">
+                                    Delivery time for your order
+                                </p>
+                                <p class="days__num">
+                                    5 days
+                                </p>
+                            </div>
+
+                            <div class="guarantees">
+                                <ul>
+                                    <li class="guarantees__item">
+                                        <img src="./img/form/icon/done.svg" alt="done">
+                                        <p>
+                                            100% satisfaction guarantee!
+                                        </p>
+                                    </li>
+                                    <li class="guarantees__item">
+                                        <img src="./img/form/icon/done.svg" alt="done">
+                                        <p>
+                                            Unlimited revisions
+                                        </p>
+                                    </li>
+                                    <li class="guarantees__item">
+                                        <img src="./img/form/icon/done.svg" alt="done">
+                                        <p>
+                                            Money back guarantee
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                            </div>
+
+                            <button type="button" class="toOrder" id="TOstep2">
+                                Add items to order
+                            </button>
+                        </aside>
+                    </div>
+
+                    <div class="action" id="action2"> 
+                        <div class="sum" style="display: block;">
+                            <h2 class="sum__title h3">
+                                Summary of your order
+                            </h2>
+
+                            <div class="sum__columns">
+                                <p class="sum__columns__name product">Product</p>
+                                <p class="sum__columns__name cost">Price</p>
+                                <p class="sum__columns__name quantity">Quantity</p>
+                                <p class="sum__columns__name total">Total</p>
+                            </div>
+
+                            <div class="orders">
+                                <div class="order">
+                                    <div class="order__img">
+                                        <img src="./img/form/sum/1.png" alt="1">
+                                    </div>
+                                    <div class="order__img_mob">
+                                        <img src="./img/form/sum/_mob.png" alt="">
+                                    </div>
+                                    <div class="order__descr">
+                                        <p class="order__descr__name h3">
+                                            <span class="sum__columns__name order_mob">
+                                                Product
+                                            </span>
+                                            Interiors
+                                        </p>
+                                        <div class="order__descr__price">
+                                            <span class="sum__columns__name order_mob">
+                                                Price
+                                            </span>
+                                            <p class="order__descr__price__num h3">
+                                                5,150 USD
+                                            </p>
+                                            <p class="order__descr__price__sale">
+                                                -10% discount
+                                            </p>
+                                        </div>
+
+                                        <div class="quantity_mob">
+                                            <span class="sum__columns__name order_mob">
+                                                Quantity
+                                            </span>
+                                            <div class="order__descr__quantity">
+                                                <button type="button" class="order__descr__quantity__minus minus">
+                                                    <img src="./img/form/icon/minus.svg" alt="minus">
+                                                </button>
+                                                <p class="order__descr__quantity__num h3">
+                                                    5
+                                                </p>
+                                                <button type="button" class="order__descr__quantity__plus minus">
+                                                    <img src="./img/form/icon/plus.svg" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex flex-column">
+                                            <span class="sum__columns__name order_mob">
+                                                Total
+                                            </span>
+                                            <p class="order__descr__total h3">
+                                                25,750 USD
+                                            </p>
+                                        </div>
+                                        
+                                        
+                                        <button type="button" class="order__descr__close">
+                                            <img src="./img/form/icon/delete.svg" alt="" class="delete">
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="order">
+                                    <div class="order__img">
+                                        <img src="./img/form/sum/2.png" alt="2">
+                                    </div>
+                                    <div class="order__img_mob">
+                                        <img src="./img/form/sum/_mob.png" alt="">
+                                    </div>
+                                    <div class="order__descr">
+                                        <p class="order__descr__name h3">
+                                            <span class="sum__columns__name order_mob">
+                                                Product
+                                            </span>
+                                            Exteriors
+                                        </p>
+                                        <div class="order__descr__price">
+                                            <span class="sum__columns__name order_mob">
+                                                Price
+                                            </span>
+                                            <p class="order__descr__price__num h3">
+                                                245 USD
+                                            </p>
+                                            <p class="order__descr__price__sale">
+                                                -3% discount
+                                            </p>
+                                        </div>
+
+                                        <div class="quantity_mob">
+                                            <span class="sum__columns__name order_mob">
+                                                Quantity
+                                            </span>
+                                            <div class="order__descr__quantity">
+                                                <button type="button" class="order__descr__quantity__minus minus">
+                                                    <img src="./img/form/icon/minus.svg" alt="minus">
+                                                </button>
+                                                <p class="order__descr__quantity__num h3">
+                                                    3
+                                                </p>
+                                                <button type="button" class="order__descr__quantity__plus minus">
+                                                    <img src="./img/form/icon/plus.svg" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex flex-column">
+                                            <span class="sum__columns__name order_mob">
+                                                Total
+                                            </span>
+                                            <p class="order__descr__total h3">
+                                                735 USD
+                                            </p>
+                                        </div>
+                                        
+                                        
+                                        <button type="button" class="order__descr__close">
+                                            <img src="./img/form/icon/delete.svg" alt="" class="delete">
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="order">
+                                    <div class="order__img">
+                                        <img src="./img/form/sum/3.png" alt="3">
+                                    </div>
+                                    <div class="order__img_mob">
+                                        <img src="./img/form/sum/_mob.png" alt="">
+                                    </div>
+                                    <div class="order__descr">
+                                        <p class="order__descr__name h3">
+                                            <span class="sum__columns__name order_mob">
+                                                Product
+                                            </span>
+                                            Modeling
+                                        </p>
+                                        <div class="order__descr__price">
+                                            <span class="sum__columns__name order_mob">
+                                                Price
+                                            </span>
+                                            <p class="order__descr__price__num h3">
+                                                175 USD
+                                            </p>
+                                        </div>
+
+                                        <div class="quantity_mob">
+                                            <span class="sum__columns__name order_mob">
+                                                Quantity
+                                            </span>
+                                            <div class="order__descr__quantity">
+                                                <button type="button" class="order__descr__quantity__minus minus">
+                                                    <img src="./img/form/icon/minus.svg" alt="minus">
+                                                </button>
+                                                <p class="order__descr__quantity__num h3">
+                                                    1
+                                                </p>
+                                                <button type="button" class="order__descr__quantity__plus minus">
+                                                    <img src="./img/form/icon/plus.svg" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex flex-column">
+                                            <span class="sum__columns__name order_mob">
+                                                Total
+                                            </span>
+                                            <p class="order__descr__total h3">
+                                                175 USD
+                                            </p>
+                                        </div>
+                                        
+                                        
+                                        <button type="button" class="order__descr__close">
+                                            <img src="./img/form/icon/delete.svg" alt="" class="delete">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="file">
+                                <h2 class="file__title h3">
+                                    Upload rest of the source materials
+                                </h2>
+                                <p class="file__subtitle">
+                                    Elevations, yard plan, floorplans, stational drawing etc in .dwg & pdf formats
+                                </p>
+                                <div class="upload">
+                                    <label for="drawing" class="upload_custom">
+                                        <img src="./img/form/icon/upload-doc.svg" alt="">
+                                        <p class="upload_custom__title">
+                                            <span style="color: #E70658;">
+                                                Click to Upload
+                                            </span> 
+                                            or drag and drop
+                                        </p>
+                                        <p class="upload_custom__sub">
+                                            Max. File size: 300 MB
+                                        </p>
+                                        <input type="file" id="drawing" name="drawing" accept=".dwg, .pdf" size="300000000" class="upload__input" multiple>
+                                    </label>
+                                    <ul class="upload__list" id="fileList"></ul>
+                                </div>
+                            </div>
+
+                            <div class="model">
+                                <h2 class="model__title h3">
+                                    3d-model for the building
+                                </h2>
+                                <p class="model__subtitle">
+                                    If you have 3d-model you can add them as well
+                                </p>
+                                <div class="model__choice">
+                                    <div class="yes-no">
+                                        <input type="radio" name="yes-no" id="yes" class="yes-no__btn">
+                                        <label class="yes-no__btn_checked">
+                                            <span>
+                                                <img src="./img/form/icon/input/radio__btn_choosed.svg" alt="Checked Icon">
+                                            </span>
+                                        </label>
+                                        <label for="yes" class="yes-no__label">
+                                            Yes
+                                        </label>
+                                    </div>
+
+                                    <div class="yes-no">
+                                        <input type="radio" name="yes-no" id="no" class="yes-no__btn" checked>
+                                        <label class="yes-no__btn_checked">
+                                            <span>
+                                                <img src="./img/form/icon/input/radio__btn_choosed.svg" alt="Checked Icon">
+                                            </span>
+                                        </label>
+                                        <label for="no" class="yes-no__label">
+                                            No
+                                        </label>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="can">
+                                <h2 class="can__title h3">
+                                    Ok, we can model it!
+                                </h2>
+                                <p class="can__question">
+                                    How many buildings your project has?
+                                </p>
+                                <div class="counter">
+                                    <div class="text">
+                                        <p class="counter__num">3</p>
+                                        <p class="counter__name yellow">Buildings</p>
+                                    </div>
+                                    
+                                    <div class="counter__btn">
+                                        <button type="button" class="counter__btn__minus minus">
+                                            <img src="./img/form/icon/minus.svg" alt="minus">
+                                        </button>
+                                        <button type="button" class="counter__btn__plus plus">
+                                            <img src="./img/form/icon/plus.svg" alt="">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="confirmation" style="display: block;">
+                            <h2 class="confirmation__title h3">
+                                Confirm Order
+                            </h2>
+                            <div class="wrapper">
+                                <div class="info">
+                                    <p class="info__text yellow">
+                                        Artist reserved for your project
+                                    </p>
+                                    <p class="info__num">
+                                        15:40
+                                        <span>:48</span>
+                                    </p>
+                                </div>
+                                
+                                <div class="info">
+                                    <p class="info__text yellow">
+                                        Total price for your project
+                                    </p>
+                                    <p class="info__num">
+                                        26,485 USD
+                                        <span>No vat</span>
+                                    </p>
+                                </div>
+
+                                <div class="info">
+                                    <p class="info__text yellow">
+                                        Delivery time for your order
+                                    </p>
+                                    <p class="info__num">
+                                        5 days
+                                    </p>
+                                </div>
+
+                                <div class="input">
+                                    <input type="radio" name="agree" id="agree" class="input__btn">
+                                    <label class="input__btn_checked">
+                                        <span>
+                                            <img src="./img/form/icon/cheked-yellow.svg" alt="checked">
+                                        </span>
+                                    </label>
+                                    <label for="agree" class="input__label">
+                                        I agree
+                                        <a href="#" class="yellow">
+                                            Terms & Conditions
+                                        </a>
+                                    </label>
+                                </div>
+                            </div>
+                            <button type="button" class="confirmation__send" id="TOstep3">
+                                Send Materials
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="action" id="action3">
+                        <div class="formInfo">
+                            <h2 class="formInfo__title h3">
+                                Thanks for submitting your order! Let’s clarify some project info now:
+                            </h2>
+                            <div class="form">
+                                <div class="fieldset">
+                                    <label for="nameProject" class="fieldset__name">
+                                        Name the project 
+                                        <span style="color: #F00;">*</span>
+                                    </label>
+                                    <input type="text" name="nameProject" id="nameProject" class="fieldset__input" placeholder="Apple Park">
+                                </div>
+
+                                <div class="fieldset">
+                                    <label for="addressProject" class="fieldset__name">
+                                        Project address
+                                    </label>
+                                    <input type="text" name="addressProject" id="addressProject" class="fieldset__input" placeholder="One Apple Park Way, Cupertino, CA 95014, United Sta…">
+                                </div>
+
+                                <div class="fieldset">
+                                    <label for="yourname" class="fieldset__name">
+                                        Your Name
+                                    </label>
+                                    <input type="text" name="yourname" id="yourname" class="fieldset__input" placeholder="Norman Foster">
+                                </div>
+
+                                <div class="fieldset">
+                                    <label for="company" class="fieldset__name">
+                                        Company Name
+                                        <span style="color: #F00;">*</span>
+                                    </label>
+                                    <input type="text" name="company" id="company" class="fieldset__input" placeholder="Foster + Partners">
+                                </div>
+
+                                <div class="fieldset">
+                                    <label for="id" class="fieldset__name">
+                                        Business ID
+                                    </label>
+                                    <input type="email" name="id" id="id" class="fieldset__input" placeholder="normanfoster@me.com">
+                                </div>
+
+                                <div class="fieldset">
+                                    <label for="youremail" class="fieldset__name">
+                                        Your email address
+                                        <span style="color: #F00;">*</span>
+                                    </label>
+                                    <input type="email" name="youremail" id="youremail" class="fieldset__input" placeholder="normanfoster@me.com">
+                                </div>
+
+                                <div class="fieldset">
+                                    <label for="phone" class="fieldset__name">
+                                        Phone
+                                        <span style="color: #F00;">*</span>
+                                    </label>
+                                    <input type="tel" name="phone" id="phone" class="fieldset__input" placeholder="+000 000 000 000">
+                                </div>
+                            </div>
+
+                            <div class="messages">
+                                <h2 class="messages__title h3">
+                                    Would you like to say something to artist?
+                                </h2>
+                                <textarea class="messages__text" rows="4">Tell us now from what perspectives you want the 3D visualizations to be made. Differentiate between interior and exterior views. List the most essential preferences concerning surface materials,furniture, and other aspects.
+                                </textarea>
+                                
+                                <div class="messages__footer">
+                                    <p class="max">
+                                        0/ 5000 marks (max)
+                                    </p>
+                                    <div class="upload">
+                                        <label for="upload" class="upload_custom">
+                                            <img src="./img/form/icon/upload-doc_dark.svg" alt="">
+                                            <p class="upload_custom__title">
+                                                <span style="color: #E70658;">
+                                                    Click to Upload
+                                                </span> 
+                                                or drag and drop
+                                            </p>
+                                            <input type="file" id="upload" name="upload" accept="" size="300000000" class="upload__input" multiple>
+                                        </label>
+                                        <ul class="upload__list" id="uploadList"></ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="formInfo__footer">
+                                <div class="deadline">
+                                    <h2 class="deadline__title h3">
+                                        Do you have strict deadline for this?
+                                    </h2>
+                                    <p class="deadline__text">
+                                        Wanted deadline for the project
+                                    </p>
+                                    <input type="date" name="date" id="date" class="deadline__date" value="2024-04-24">
+                                </div>
+
+                                <div class="note">
+                                    <h2 class="note__title h3">
+                                        NOTE! Revisions
+                                    </h2>
+                                    <p class="note__text yellow">
+                                        We will make the necessary revisions until you are satisfied with the final result. We always offer a 100% satisfaction guarantee! ” If you need more, you can buy it later.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="confirmation" style="display: block;">
+                            <h2 class="confirmation__title h3">
+                                Confirm Order
+                            </h2>
+                            <div class="wrapper">
+                                <div class="info">
+                                    <p class="info__text yellow">
+                                        Artist reserved for your project
+                                    </p>
+                                    <p class="info__num">
+                                        15:40
+                                        <span>:48</span>
+                                    </p>
+                                </div>
+                                
+                                <div class="info">
+                                    <p class="info__text yellow">
+                                        Total price for your project
+                                    </p>
+                                    <p class="info__num d-flex flex-column">
+                                        26,485 USD
+                                        <span class="opacity-75">+100 vat</span>
+                                    </p>
+                                </div>
+
+                                <div class="info mb-5">
+                                    <p class="info__text yellow">
+                                        Delivery time for your order
+                                    </p>
+                                    <p class="info__num">
+                                        5 days
+                                    </p>
+                                </div>
+                            </div>
+                            <button type="button" class="confirmation__send" id="TOstep4">
+                                Make artist reservation
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="action" id="action4">
+                        <div class="thanks">
+                            <h2 class="thanks__title">
+                                Thanks for submitting your order! 
+                            </h2>
+                            <p class="thanks__text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            </p>
+                            <a href="#" class="thanks__btn">
+                                Go to main page
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal" id="modal1">
+        <div class="container">
+            <div class="modal__img">
+                
+                <img src="./img/form/building/sliders/1.png" alt="1"><button type="button" class="modal__close">
+                    <img src="./img/form/icon/close.svg" alt="close">
+                </button>
+            </div>
+            
+        </div> 
+    </div>
+    <div class="modal" id="modal2">
+        <div class="container">
+            <div class="modal__img">
+                <button type="button" class="modal__close">
+                    <img src="./img/form/icon/close.svg" alt="close">
+                </button>
+                <img src="./img/form/building/sliders/2.png" alt="2">
+            </div>
+        </div> 
+    </div>
+    <div class="modal" id="modal3">
+        <div class="container">
+            <div class="modal__img">
+                <button type="button" class="modal__close">
+                    <img src="./img/form/icon/close.svg" alt="close">
+                </button>
+                <img src="./img/form/building/sliders/3.png" alt="3">
+            </div>
+        </div> 
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+
+    <script src="./source/js/slick/slick.min.js"></script>
+    <script src="./source/js/slick/slick.js"></script>
+    
+    <script src="./source/js/sliders.js"></script>
+    <script src="./source/js/nav.js"></script>
+    <script src="./source/js/modal.js"></script>
+    <script src="./source/js/dropdown.js"></script>
+    <script src="./source/js/input=file.js"></script>
+    <script src="./source/js/btn+-x.js"></script>
+</body>
+</html>

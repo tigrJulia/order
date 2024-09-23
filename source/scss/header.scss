@@ -1,0 +1,98 @@
+.header {
+    margin-top: 27px;
+    @media screen and (max-width: 436px) {
+        margin-top: 48px;
+    }
+    .row {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        .colomn {
+            display: flex;
+            flex-direction: column;
+            width: fit-content;
+            padding: 0;
+            
+        }
+    }
+}
+.title {
+    margin-bottom: 24px;
+    display: flex;
+    flex: 1 1 auto;
+    gap: 20px;
+    @media screen and (max-width: 1186px) {
+        align-items: start;
+        flex-direction: column;
+        gap: 8px;
+    }
+    @media screen and (max-width: 436px) {
+        align-items:stretch;
+        width: 100%;
+        margin-bottom: 18px;
+    }
+    .quick {display: flex;
+        @media screen and (max-width: 436px) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+.steps {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 16px;
+    .step {
+        display: flex;
+        padding: 10px 51px 10px 48px;
+        align-items: center;
+        gap: 16px;
+        border-radius: 15px;
+        background-color: #edeef0;
+        cursor: pointer;
+        @media screen and (max-width: 521px) {width: 100%;}
+        &__num {
+            opacity: 0.5;
+            font-size: 34px;
+            font-weight: 600;
+            line-height: 40px;
+            letter-spacing: -1px;
+            margin: 0;
+        }
+        &__descr {
+            opacity: 0.5;
+            text-align: center;
+            font-size: 14px;
+            line-height: 14px;
+            margin: 0;
+        }
+        &:hover {
+            background-color: #ffffff;
+            color: #E70658;
+            transition: all .3s ease;
+            .step__num, .step__descr {opacity: 1;}
+        }
+    }
+    .active {
+        background-color: #E70658;
+        color: #ffffff;
+        .step__num,.step__descr {opacity: 1;}
+    }
+}
+
+.logo {
+    width: 137px;
+    height: 137px;
+    padding: 0;
+    @media screen and (max-width: 965px) {display: none;}
+    &-mb {
+        display: none;
+        width: 137px;
+        height: 137px;
+        padding: 0;
+        margin-top: 14px;
+        flex: 0 0 137px;
+        @media screen and (max-width: 965px) {display: flex;}
+    }
+}

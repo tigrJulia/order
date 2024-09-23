@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200..800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
+  font-family: "Plus Jakarta Sans";
+  font-weight: 500;
+  color: black;
+  background: var(--fff-006, #FFF006);
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1 1 auto;
+}
+
+.container {
+  max-width: 1312px;
+  padding: 0 16px;
+}
+
+.h1 {
+  display: inline;
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: -1px;
+  margin: auto 0;
+}
+.h1-attention {
+  padding: 4px 24px 9px 25px;
+  border-radius: 27px;
+  background: #96E329;
+}
+@media screen and (max-width: 375px) {
+  .h1-attention {
+    font-size: 24px;
+    padding: 9px 25px;
+  }
+}
+@media screen and (max-width: 436px) {
+  .h1 {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 375px) {
+  .h1 {
+    font-size: 23px;
+    line-height: 32px;
+  }
+}
+
+.h3 {
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: -0.5px;
+  margin: 0;
+}
+@media screen and (max-width: 375px) {
+  .h3 {
+    font-size: 18px;
+  }
+}
+
+.bi.bi-exclamation-circle {
+  transform: rotate(180deg);
+  margin-left: 8px;
+  align-items: center;
+}
+
+.yellow {
+  color: #FFF006;
+}

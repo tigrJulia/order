@@ -1,0 +1,125 @@
+.header {
+  margin-top: 27px;
+}
+@media screen and (max-width: 436px) {
+  .header {
+    margin-top: 48px;
+  }
+}
+.header .row {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+.header .row .colomn {
+  display: flex;
+  flex-direction: column;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0;
+}
+
+.title {
+  margin-bottom: 24px;
+  display: flex;
+  flex: 1 1 auto;
+  gap: 20px;
+}
+@media screen and (max-width: 1186px) {
+  .title {
+    align-items: start;
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+@media screen and (max-width: 436px) {
+  .title {
+    align-items: stretch;
+    width: 100%;
+    margin-bottom: 18px;
+  }
+}
+.title .quick {
+  display: flex;
+}
+@media screen and (max-width: 436px) {
+  .title .quick {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.steps {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.steps .step {
+  display: flex;
+  padding: 10px 51px 10px 48px;
+  align-items: center;
+  gap: 16px;
+  border-radius: 15px;
+  background-color: #edeef0;
+  cursor: pointer;
+}
+@media screen and (max-width: 521px) {
+  .steps .step {
+    width: 100%;
+  }
+}
+.steps .step__num {
+  opacity: 0.5;
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: -1px;
+  margin: 0;
+}
+.steps .step__descr {
+  opacity: 0.5;
+  text-align: center;
+  font-size: 14px;
+  line-height: 14px;
+  margin: 0;
+}
+.steps .step:hover {
+  background-color: #ffffff;
+  color: #E70658;
+  transition: all 0.3s ease;
+}
+.steps .step:hover .step__num, .steps .step:hover .step__descr {
+  opacity: 1;
+}
+.steps .active {
+  background-color: #E70658;
+  color: #ffffff;
+}
+.steps .active .step__num, .steps .active .step__descr {
+  opacity: 1;
+}
+
+.logo {
+  width: 137px;
+  height: 137px;
+  padding: 0;
+}
+@media screen and (max-width: 965px) {
+  .logo {
+    display: none;
+  }
+}
+.logo-mb {
+  display: none;
+  width: 137px;
+  height: 137px;
+  padding: 0;
+  margin-top: 14px;
+  flex: 0 0 137px;
+}
+@media screen and (max-width: 965px) {
+  .logo-mb {
+    display: flex;
+  }
+}

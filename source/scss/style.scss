@@ -1,0 +1,54 @@
+@import "_nullstyle";
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+.content {
+    flex: 1 1 auto;
+}
+.container {
+    max-width: 1312px;
+    padding: 0 16px;
+}
+
+
+.h1 {
+    display: inline;
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: -1px;
+    margin: auto 0;
+    &-attention {
+        padding: 4px 24px 9px 25px;
+        border-radius: 27px;
+        background: #96E329;
+        @media screen and (max-width: 375px) {
+            font-size: 24px;
+            padding: 9px 25px;
+        }
+    }
+    @media screen and (max-width: 436px) {text-align: center;}
+    @media screen and (max-width: 375px) {
+        font-size: 23px;
+        line-height: 32px;
+    }
+}
+.h3 {
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: -0.5px;
+    margin: 0;
+    @media screen and (max-width: 375px) {font-size: 18px;}
+}
+.bi.bi-exclamation-circle {
+    transform: rotate(180deg);
+    margin-left: 8px;
+    align-items: center;
+}
+
+.yellow {
+    color: #FFF006;
+}
