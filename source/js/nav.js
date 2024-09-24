@@ -47,6 +47,16 @@ document.getElementById('TOstep1').addEventListener('click', function() {
     document.querySelector('.step1').classList.add('active');
     document.getElementById('action1').classList.add('now');
     document.querySelector('.building').classList.remove('close');
+
+    document.querySelectorAll('.mobOpen').forEach(function(element) {
+        element.classList.remove('mobOpen');
+    }); 
+    document.querySelectorAll('.navMob_open').forEach(function(element) {
+        element.classList.remove('navMob_open');
+    });
+    
+    document.querySelector('.TOinteriors').classList.add('navMob_open');
+    document.getElementById('interiors').classList.add('mobOpen');
 });
 
 document.querySelectorAll('#TOstep2').forEach(function(button) {

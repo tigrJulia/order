@@ -88,7 +88,7 @@
             width: 100%;
             @media screen and (max-width: 944px) {flex-direction: column;}
             &__input {display: none;}
-            &_custom {
+            &-custom {
                 border: 1px dashed #8DA4B0;
                 border-radius: 17px;
                 padding: 5px 16px;

@@ -141,7 +141,7 @@
 .messages__footer .upload__input {
   display: none;
 }
-.messages__footer .upload_custom {
+.messages__footer .upload-custom {
   border: 1px dashed #8DA4B0;
   border-radius: 17px;
   padding: 5px 16px;
@@ -150,7 +150,7 @@
   margin: 0;
   text-wrap: nowrap;
 }
-.messages__footer .upload_custom__title {
+.messages__footer .upload-custom__title {
   margin: 0;
   font-size: 14px;
   line-height: 16px;
