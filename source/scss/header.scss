@@ -43,6 +43,7 @@
     align-items: flex-start;
     flex-wrap: wrap;
     gap: 16px;
+    @media screen and (max-width: 827px) {flex-direction: column;}
     .step {
         display: flex;
         padding: 10px 51px 10px 48px;
@@ -51,7 +52,7 @@
         border-radius: 15px;
         background-color: #edeef0;
         cursor: pointer;
-        @media screen and (max-width: 521px) {width: 100%;}
+        @media screen and (max-width: 827px) {width: 100%;}
         &__num {
             opacity: 0.5;
             font-size: 34px;
